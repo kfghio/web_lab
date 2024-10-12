@@ -1,0 +1,22 @@
+.body {
+    margin: 0;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+a {
+    display: block;
+}
+
+.img {
+    max-width: 100%;
+    height: 150px;
+    border-radius: 50px;
+}
+
+.img p{
+    text-align: center;
+}

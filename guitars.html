@@ -7,43 +7,68 @@
     <title>Магазин гитар</title>
     <link rel="stylesheet" href="outlines.css">
 </head>
-<body>
+<body class="body">
 
-<header>
-    <h1>GSS</h1>
-    <nav>
-        <ul>
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#goods">Товары</a></li>
+<header class="header">
+    <h1 class="headers h1">GSS</h1>
+    <nav class="nav">
+        <ul class="nav ul">
+            <li><a href="guitars.html">Главная</a>
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                </ul>
+            </li>
+            <li><a href="#goods">Товары</a>
+                <ul>
+                    <li><a href="acoustic.html">Акустические гитары</a></li>
+                    <li><a href="electric.html">Электрогитары</a></li>
+                </ul>
+            </li>
             <li><a href="#contact">Контакты</a></li>
         </ul>
     </nav>
+
 </header>
 
 <main>
     <section id="welcome">
         <article>
-            <h2>Добро пожаловать</h2>
-            <p><strong>Guitar Soul Strings</strong> - лучший магазин гитар!</p>
+            <h2 class="headers">Добро пожаловать</h2>
+            <p class="welcome"><strong>Guitar Soul Strings</strong> - <span class="bad">худший</span> <span class="underline">лучший</span> магазин гитар!</p>
         </article>
     </section>
 
     <section id="goods">
-        <h2>Товары</h2>
+        <h2 class="headers">Товары</h2>
         <ul>
-            <li><em><b>Акустические гитары</b></em></li>
-            <li><i><strong>Электрогитары</strong></i></li>
+            <li>
+                <div class="image-container">
+                    <a href="acoustic.html">
+                        <img src="acoustic-guitar.jpg" alt="Акустическая гитара">
+                    </a>
+                    <p>Акустическая гитара</p>
+                </div>
+            </li>
+            <li>
+                <div class="image-container">
+                    <a href="electric.html">
+                        <img src="electric-guitar.jpg" alt="Электрогитара">
+                    </a>
+                    <p>Электрогитары</p>
+                </div>
+            </li>
         </ul>
     </section>
 
     <aside>
-        <h3>Неш девиз</h3>
+        <h3 class="headers">Неш девиз</h3>
         <blockquote>Собери свой звук, <sub> найди свою гитару!</sub></blockquote>
     </aside>
 
     <section id="ascii-note">
-        <h2>Нотки</h2>
-        <pre>
+        <h2 class="headers">Нотки</h2>
+        <pre class="pre">
             .
             ┈┏━┓┈┈┈┈┈┏╯┈┈┈┈┏╯┈
             ┈┣━┫┈┈┈┈┈┣╯┈┈┈┈┣╯┈
@@ -54,8 +79,8 @@
     </section>
 
     <section id="backend-code-snippet">
-        <h2>Часть нашего бэка</h2>
-        <pre><code>
+        <h2 class="headers">Часть нашего бэка</h2>
+        <pre class="pre"><code class="code">
             package main
 
             import (
@@ -85,7 +110,7 @@
     </section>
 </main>
 
-<footer>
+<footer class="footer">
     <p>&copy; 2024 Guitar shop</p>
 </footer>
 
