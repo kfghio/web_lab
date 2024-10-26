@@ -10,6 +10,7 @@
     color: #333;
     line-height: 1.6;
     padding: 20px;
+    padding-top: 100px;
 }
 
 .headers{
@@ -29,13 +30,16 @@ p, li, pre {
 }
 
 .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
     color: #A0A4FF;
     padding: 20px;
-    position: relative;
 }
 
 .nav {
@@ -193,11 +197,37 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .styled-table {
+        grid-template-columns: 1fr; 
+    }
+
+    .styled-table th, .styled-table td {
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
     #goods ul {
         flex-direction: column;
     }
 
     #goods li {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .footer {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header h1{
+        font-size: 3rem; 
+    }
+    .header a{
+        font-size: 2rem; 
     }
 }
