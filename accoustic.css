@@ -160,6 +160,47 @@ nav ul li:hover ul {
     z-index: 1;
 }
 
+.active {
+    font-weight: bold;
+    border-bottom: 2px solid #06e1ff; 
+    color: #06e1ff;
+}
+
+section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+section p, section ul {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 15px 0;
+    color: #666;
+    border-left: 4px solid #A0A4FF;
+    padding-left: 15px;
+}
+
 @media screen and (max-width: 768px) {
     .styled-table {
         grid-template-columns: 1fr; 
