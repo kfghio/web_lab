@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты</title>
+    <title>коснструктор расписания</title>
     <link rel="stylesheet" href="accoustic.css">
     <script src="scripts/load.js" defer></script>
     <script src="scripts/active.js" defer></script>
@@ -35,17 +35,16 @@
 </header>
 
 <main>
-    <section id="contact-info">
-        <h2>Контакты</h2>
-        <p>Вы можете связаться с нами по следующим каналам:</p>
-        <ul>
-            <li><strong>Адрес:</strong> ул. Музыкальная, д. 77, Гитарград, Россия</li>
-            <li><strong>Телефон:</strong> +7 (917) 285-**-**</li>
-            <li><strong>Email:</strong> contact@guitarshop.ru</li>
-        </ul>
-        <p>Мы работаем с понедельника по пятницу с 9:00 до 18:00.</p>
-    </section>
+    <h1>Список дел</h1>
+    <form id="todoForm">
+        <input type="text" id="todoInput" placeholder="Введите новое дело" required />
+        <button type="submit">Добавить</button>
+    </form>
+    <ul id="todoList" class="todo-list"></ul>
 </main>
 
+<script src="/scripts/affair.js"></script>
 </body>
 </html>
+
+    
