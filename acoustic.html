@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Картинка-ссылка</title>
     <link rel="stylesheet" href="accoustic.css">
+    <script src="scripts/preload.js" defer></script>
     <script src="scripts/load.js" defer></script>
     <script src="scripts/active.js" defer></script>
 </head>
@@ -31,7 +32,6 @@
             <li><a href="contact.html">Контакты</a></li>
         </ul>
     </nav>
-
 </header>
 
 <main>
@@ -64,6 +64,16 @@
                 <div class="styled-cell">21500 руб</div>
             </div>
         </div>
+    </section>
+
+    <button id="retry-button">Повторить запрос</button>
+    
+    <section id="dynamic-data">
+        <h2>Данные с сервера</h2>
+        <div id="preloader" style="display: none;">
+            <img src="other/load.gif" alt="Loading..." />
+        </div>
+        <div id="content"></div>
     </section>
 </main>
 
